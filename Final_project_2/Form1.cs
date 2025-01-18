@@ -26,7 +26,13 @@ namespace Final_project_2
                 Form2 form2 = new Form2();
                 form2.Show();
                 this.Hide();
+
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

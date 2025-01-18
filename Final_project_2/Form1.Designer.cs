@@ -46,11 +46,12 @@ namespace Final_project_2
             this.pictureBox1.Size = new System.Drawing.Size(743, 308);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.progressBar1.Location = new System.Drawing.Point(490, 457);
+            this.progressBar1.Location = new System.Drawing.Point(427, 457);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(344, 23);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;

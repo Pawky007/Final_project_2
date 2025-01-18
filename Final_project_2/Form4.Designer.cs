@@ -1,6 +1,6 @@
 ﻿namespace Final_project_2
 {
-    partial class Form2
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.customTextBox1 = new Final_project_2.Custom.CustomTextBox();
             this.customTextBox2 = new Final_project_2.Custom.CustomTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(103)))), ((int)(((byte)(202)))));
+            this.label2.Location = new System.Drawing.Point(829, 146);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(189, 62);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "LOG IN";
             // 
             // button1
             // 
@@ -53,85 +65,54 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("OCR A Extended", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(868, 416);
+            this.button1.Location = new System.Drawing.Point(866, 465);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "VERIFY";
+            this.button1.TabIndex = 19;
+            this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(814, 409);
+            this.pictureBox4.Location = new System.Drawing.Point(812, 458);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(251, 58);
-            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabIndex = 20;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(712, 317);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 31);
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 35F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(103)))), ((int)(((byte)(202)))));
-            this.label2.Location = new System.Drawing.Point(683, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(516, 62);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "User NID Verification";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(754, 281);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(184, 32);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Enter User NID";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-6, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-26, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1305, 663);
-            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.Size = new System.Drawing.Size(1306, 663);
+            this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label5
+            // customTextBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(781, 313);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 22;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(766, 354);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 23;
+            this.customTextBox1.BackColor = System.Drawing.Color.White;
+            this.customTextBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customTextBox1.BorderFocusColor1 = System.Drawing.Color.DarkGray;
+            this.customTextBox1.BorderRadius = 0;
+            this.customTextBox1.BorderSize = 2;
+            this.customTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customTextBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.customTextBox1.Location = new System.Drawing.Point(739, 377);
+            this.customTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.customTextBox1.Multiline = false;
+            this.customTextBox1.Name = "customTextBox1";
+            this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox1.PalaceHolderColor = System.Drawing.Color.LightGray;
+            this.customTextBox1.PasswordChar = false;
+            this.customTextBox1.PlaceHolderText = "Password";
+            this.customTextBox1.Size = new System.Drawing.Size(393, 33);
+            this.customTextBox1.TabIndex = 24;
+            this.customTextBox1.UnderlinedStyle = true;
             // 
             // customTextBox2
             // 
@@ -142,55 +123,74 @@
             this.customTextBox2.BorderSize = 2;
             this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customTextBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.customTextBox2.Location = new System.Drawing.Point(760, 317);
+            this.customTextBox2.Location = new System.Drawing.Point(739, 270);
             this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.customTextBox2.Multiline = false;
             this.customTextBox2.Name = "customTextBox2";
             this.customTextBox2.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox2.PalaceHolderColor = System.Drawing.Color.LightGray;
             this.customTextBox2.PasswordChar = false;
-            this.customTextBox2.PlaceHolderText = "User NID";
+            this.customTextBox2.PlaceHolderText = "Email ID";
             this.customTextBox2.Size = new System.Drawing.Size(393, 33);
-            this.customTextBox2.TabIndex = 3;
+            this.customTextBox2.TabIndex = 23;
             this.customTextBox2.UnderlinedStyle = true;
-            this.customTextBox2._TextChanged += new System.EventHandler(this.customTextBox2__TextChanged);
             // 
-            // Form2
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(700, 271);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(700, 377);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 26;
+            this.pictureBox3.TabStop = false;
+            // 
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 661);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.customTextBox1);
+            this.Controls.Add(this.customTextBox2);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.customTextBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form2";
+            this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
+            this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Custom.CustomTextBox customTextBox2;
+
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
+        private Custom.CustomTextBox customTextBox1;
+        private Custom.CustomTextBox customTextBox2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
