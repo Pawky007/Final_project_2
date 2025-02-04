@@ -112,6 +112,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 29;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // label2
             // 
@@ -144,6 +145,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 32;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // customTextBox1
             // 
@@ -165,6 +167,7 @@
             this.customTextBox1.Size = new System.Drawing.Size(303, 31);
             this.customTextBox1.TabIndex = 25;
             this.customTextBox1.UnderlinedStyle = true;
+            this.customTextBox1._TextChanged += new System.EventHandler(this.customTextBox1__TextChanged);
             // 
             // Form6
             // 

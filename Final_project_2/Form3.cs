@@ -126,7 +126,7 @@ namespace Final_project_2
                     {
                         timer.Stop();
                         pictureBox3.Visible = false;
-                        Form4 form = new Form4();
+                        Admin_Panel form = new Admin_Panel();
                         form.Show();
                         this.Hide();
                     };
@@ -143,6 +143,11 @@ namespace Final_project_2
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

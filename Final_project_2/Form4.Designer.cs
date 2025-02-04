@@ -134,6 +134,7 @@
             this.customTextBox2.Size = new System.Drawing.Size(393, 33);
             this.customTextBox2.TabIndex = 23;
             this.customTextBox2.UnderlinedStyle = true;
+            this.customTextBox2._TextChanged += new System.EventHandler(this.customTextBox2__TextChanged);
             // 
             // pictureBox2
             // 

@@ -32,12 +32,21 @@ namespace Final_project_2
             {
                 MessageBox.Show("Please Enter Your Password!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if(customTextBox1.Text == "admin" && customTextBox2.Text == "admin")
             {
-                Form5 form5 = new Form5();
-                form5.Show();
+                Admin_Panel admin_Panel = new Admin_Panel();
+                admin_Panel.Show();
                 this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Invalid!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void customTextBox2__TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,5 +38,20 @@ namespace Final_project_2
             label3.Visible = true;
             pictureBox5.Visible = true;
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

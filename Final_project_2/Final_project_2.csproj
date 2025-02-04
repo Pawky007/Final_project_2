@@ -80,6 +80,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin_Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Panel.Designer.cs">
+      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Custom\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +136,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TapNgo_Metro_ServiceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapNgo_Metro_ServiceDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="User_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Data.Designer.cs">
+      <DependentUpon>User_Data.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin_Panel.resx">
+      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +183,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="User_Data.resx">
+      <DependentUpon>User_Data.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Final_project_2_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -174,6 +197,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TapNgo_Metro_ServiceDataSet.xsc">
+      <DependentUpon>TapNgo_Metro_ServiceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TapNgo_Metro_ServiceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TapNgo_Metro_ServiceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TapNgo_Metro_ServiceDataSet.xss">
+      <DependentUpon>TapNgo_Metro_ServiceDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -189,6 +223,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
