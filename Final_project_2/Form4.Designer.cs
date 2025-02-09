@@ -108,7 +108,7 @@
             this.customTextBox1.Name = "customTextBox1";
             this.customTextBox1.Padding = new System.Windows.Forms.Padding(7);
             this.customTextBox1.PalaceHolderColor = System.Drawing.Color.LightGray;
-            this.customTextBox1.PasswordChar = false;
+            this.customTextBox1.PasswordChar = true;
             this.customTextBox1.PlaceHolderText = "Password";
             this.customTextBox1.Size = new System.Drawing.Size(393, 33);
             this.customTextBox1.TabIndex = 24;

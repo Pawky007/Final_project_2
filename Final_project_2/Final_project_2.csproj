@@ -80,17 +80,41 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_Panel.cs">
+    <Compile Include="AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Panel.Designer.cs">
-      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Custom\CustomTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Custom\CustomTextBox.Designer.cs">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employe_Adding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employe_Adding.Designer.cs">
+      <DependentUpon>Employe_Adding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employe_panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employe_panel.Designer.cs">
+      <DependentUpon>Employe_panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faiyaz_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faiyaz_1.Designer.cs">
+      <DependentUpon>Faiyaz_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faiyaz_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faiyaz_2.Designer.cs">
+      <DependentUpon>Faiyaz_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -134,6 +158,18 @@
     <Compile Include="Loading_After_NID.Designer.cs">
       <DependentUpon>Loading_After_NID.cs</DependentUpon>
     </Compile>
+    <Compile Include="loading_after_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loading_after_payment.Designer.cs">
+      <DependentUpon>loading_after_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mehedi_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mehedi_1.Designer.cs">
+      <DependentUpon>Mehedi_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TapNgo_Metro_ServiceDataSet.Designer.cs">
@@ -141,17 +177,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TapNgo_Metro_ServiceDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TapNgo_Metro_ServiceDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TapNgo_Metro_ServiceDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Top_UP_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Top_UP_2.Designer.cs">
+      <DependentUpon>Top_UP_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="top_Up_for_Employe_and_admin_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="top_Up_for_Employe_and_admin_2.Designer.cs">
+      <DependentUpon>top_Up_for_Employe_and_admin_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top_up_page_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Top_up_page_1.Designer.cs">
+      <DependentUpon>Top_up_page_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Top_Up_page_for_employe_and_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Top_Up_page_for_employe_and_Admin.Designer.cs">
+      <DependentUpon>Top_Up_page_for_employe_and_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update_Employe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update_Employe.Designer.cs">
+      <DependentUpon>Update_Employe.cs</DependentUpon>
+    </Compile>
     <Compile Include="User_Data.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User_Data.Designer.cs">
       <DependentUpon>User_Data.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin_Panel.resx">
-      <DependentUpon>Admin_Panel.cs</DependentUpon>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom\CustomTextBox.resx">
       <DependentUpon>CustomTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employe_Adding.resx">
+      <DependentUpon>Employe_Adding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employe_panel.resx">
+      <DependentUpon>Employe_panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faiyaz_1.resx">
+      <DependentUpon>Faiyaz_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faiyaz_2.resx">
+      <DependentUpon>Faiyaz_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -174,6 +257,12 @@
     <EmbeddedResource Include="Loading_After_NID.resx">
       <DependentUpon>Loading_After_NID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="loading_after_payment.resx">
+      <DependentUpon>loading_after_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mehedi_1.resx">
+      <DependentUpon>Mehedi_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -182,7 +271,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Top_UP_2.resx">
+      <DependentUpon>Top_UP_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="top_Up_for_Employe_and_admin_2.resx">
+      <DependentUpon>top_Up_for_Employe_and_admin_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Top_up_page_1.resx">
+      <DependentUpon>Top_up_page_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Top_Up_page_for_employe_and_Admin.resx">
+      <DependentUpon>Top_Up_page_for_employe_and_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update_Employe.resx">
+      <DependentUpon>Update_Employe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User_Data.resx">
       <DependentUpon>User_Data.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +313,17 @@
     <None Include="TapNgo_Metro_ServiceDataSet.xss">
       <DependentUpon>TapNgo_Metro_ServiceDataSet.xsd</DependentUpon>
     </None>
+    <None Include="TapNgo_Metro_ServiceDataSet1.xsc">
+      <DependentUpon>TapNgo_Metro_ServiceDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TapNgo_Metro_ServiceDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TapNgo_Metro_ServiceDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TapNgo_Metro_ServiceDataSet1.xss">
+      <DependentUpon>TapNgo_Metro_ServiceDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -226,6 +342,99 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger-bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bkash-Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bkash-Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nagad-Logo.wine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bkash-Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dutch-bangla-rocket-logo-png_seeklogo-317692.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin-number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\master-card-logo-png_seeklogo-89117.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa-logo-visa-icon-free-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\top-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2025-02-05 165950.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verified %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-data.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\New folder %284%29\myproject\myproject\myproject.csproj">
+      <Project>{abeaa4e0-cb0f-4cf3-828a-9d20d6c48a72}</Project>
+      <Name>myproject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

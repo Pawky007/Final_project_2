@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,17 +35,41 @@ namespace Final_project_2
             }
             else if(customTextBox1.Text == "admin" && customTextBox2.Text == "admin")
             {
-                Admin_Panel admin_Panel = new Admin_Panel();
+                AdminPanel admin_Panel = new AdminPanel();
                 admin_Panel.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Invalid!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                string connection = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connection);
+                con.Open();
+                string query = "SELECT Email, Password FROM Employe_Information WHERE Email = '" + customTextBox2.Text + "' AND Password = '" + customTextBox1.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        MessageBox.Show("Successfully Log In!!!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Employe_panel top_Up_Page = new Employe_panel();
+                        top_Up_Page.Show();
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Email Or Password Or Contact The Admin Office!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
         private void customTextBox2__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

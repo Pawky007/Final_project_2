@@ -45,22 +45,17 @@ namespace Final_project_2
              else
              {
                 string connectionString = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
-                using (SqlConnection con = new SqlConnection(connectionString))
-                {
-                    con.Open();
-                    // Using 'User_NID' as the column name
-                    string query = "INSERT INTO User_NID (User_NID) VALUES (@value)";
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        cmd.Parameters.AddWithValue("@value", Convert.ToInt32(customTextBox2.Text));
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+                string query = "INSERT INTO User_NID (User_NID) VALUES (@value)";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@value", Convert.ToInt32(customTextBox2.Text));
+                cmd.ExecuteNonQuery();
+                con.Close();
                 Loading_After_NID form3 = new Loading_After_NID();
-                 form3.Show();
-                 this.Hide();
-                 label5.Text = "";
+                form3.Show();
+                this.Hide();
+                label5.Text = "";
              }
            
         }
@@ -95,6 +90,13 @@ namespace Final_project_2
         private void customTextBox2__TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminPanel admin_Panel = new AdminPanel();
+            admin_Panel.Show();
+            this.Hide();
         }
     }
 }

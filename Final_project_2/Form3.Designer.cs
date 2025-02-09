@@ -69,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(103)))), ((int)(((byte)(202)))));
-            this.label2.Location = new System.Drawing.Point(705, 73);
+            this.label2.Location = new System.Drawing.Point(722, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(433, 54);
             this.label2.TabIndex = 20;
@@ -83,6 +83,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(326, 22);
             this.dateTimePicker1.TabIndex = 25;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // button1
             // 
@@ -111,6 +112,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(251, 58);
             this.pictureBox4.TabIndex = 27;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox2
             // 
@@ -123,6 +125,7 @@
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox6
             // 
@@ -133,6 +136,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 31;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
@@ -143,6 +147,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 32;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -153,6 +158,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 33;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
             // 
@@ -163,6 +169,7 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 34;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox3
             // 
@@ -183,6 +190,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(1305, 663);
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // customTextBox4
             // 
@@ -204,6 +212,7 @@
             this.customTextBox4.Size = new System.Drawing.Size(326, 31);
             this.customTextBox4.TabIndex = 24;
             this.customTextBox4.UnderlinedStyle = true;
+            this.customTextBox4._TextChanged += new System.EventHandler(this.customTextBox4__TextChanged);
             // 
             // customTextBox3
             // 
@@ -225,6 +234,7 @@
             this.customTextBox3.Size = new System.Drawing.Size(326, 31);
             this.customTextBox3.TabIndex = 23;
             this.customTextBox3.UnderlinedStyle = true;
+            this.customTextBox3._TextChanged += new System.EventHandler(this.customTextBox3__TextChanged);
             // 
             // customTextBox2
             // 
@@ -246,6 +256,7 @@
             this.customTextBox2.Size = new System.Drawing.Size(326, 31);
             this.customTextBox2.TabIndex = 22;
             this.customTextBox2.UnderlinedStyle = true;
+            this.customTextBox2._TextChanged += new System.EventHandler(this.customTextBox2__TextChanged);
             // 
             // customTextBox1
             // 
@@ -267,6 +278,7 @@
             this.customTextBox1.Size = new System.Drawing.Size(326, 31);
             this.customTextBox1.TabIndex = 21;
             this.customTextBox1.UnderlinedStyle = true;
+            this.customTextBox1._TextChanged += new System.EventHandler(this.customTextBox1__TextChanged);
             // 
             // button2
             // 
@@ -295,6 +307,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(251, 58);
             this.pictureBox5.TabIndex = 39;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label1
             // 
@@ -306,6 +319,7 @@
             this.label1.Size = new System.Drawing.Size(242, 41);
             this.label1.TabIndex = 41;
             this.label1.Text = "Congratulation";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -317,6 +331,7 @@
             this.label4.Size = new System.Drawing.Size(375, 32);
             this.label4.TabIndex = 42;
             this.label4.Text = "Your Registration is Successful";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -326,6 +341,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 13);
             this.label5.TabIndex = 43;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -335,6 +351,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 44;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -344,6 +361,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 45;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -353,6 +371,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 46;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -362,6 +381,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 13);
             this.label9.TabIndex = 47;
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Form3
             // 
@@ -396,6 +416,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

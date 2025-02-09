@@ -29,7 +29,7 @@ namespace Final_project_2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Admin_Panel admin_Panel = new Admin_Panel();
+            AdminPanel admin_Panel = new AdminPanel();
             admin_Panel.Show();
             this.Hide();
         }
@@ -38,33 +38,31 @@ namespace Final_project_2
         {
 
         }
-
+        string Email;
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count > 0)
+            if (string.IsNullOrWhiteSpace(customTextBox2.Text))
             {
-                DataGridViewRow selectedRow = dataGridView1.SelectedRows[0];
-                string Email = selectedRow.Cells["Email"].Value.ToString();
-
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this record?", "Confirm Delete", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    string connectionString = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
-
-                    if (rowsAffected > 0)
-                    {
-                        dataGridView1.Rows.Remove(selectedRow);
-                        MessageBox.Show("Data deleted successfully.");
-                    }
-                    else
-                    {
-                        MessageBox.Show("No record found with the given Email.");
-                    }
-                }
+                MessageBox.Show("USER NID IS NOT FILLED!!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                MessageBox.Show("No rows are selected.");
+                DataGridViewRow row = dataGridView1.Rows[0];
+                Email = row.Cells[0].Value.ToString();
+
+                string connectionString = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+                string query = "DELETE FROM User_Information WHERE Email = @Email";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Email", Email);
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                MessageBox.Show("User Delete Successfully" ,"Error", MessageBoxButtons.OKCancel,MessageBoxIcon.Information);
+                AdminPanel admin = new AdminPanel();
+                admin.Show();
+                this.Hide();
             }
 
         }

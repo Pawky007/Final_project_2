@@ -31,26 +31,32 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User_Data));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tapNgo_Metro_ServiceDataSet = new Final_project_2.TapNgo_Metro_ServiceDataSet();
-            this.userInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.user_InformationTableAdapter = new Final_project_2.TapNgo_Metro_ServiceDataSetTableAdapters.User_InformationTableAdapter();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userInformationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tapNgo_Metro_ServiceDataSet = new Final_project_2.TapNgo_Metro_ServiceDataSet();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.user_InformationTableAdapter = new Final_project_2.TapNgo_Metro_ServiceDataSetTableAdapters.User_InformationTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.customTextBox2 = new Final_project_2.Custom.CustomTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInformationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tapNgo_Metro_ServiceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tapNgo_Metro_ServiceDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userInformationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -60,11 +66,50 @@
             this.passwordDataGridViewTextBoxColumn,
             this.dateOfBirthDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.userInformationBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 112);
+            this.dataGridView1.Location = new System.Drawing.Point(634, 81);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1214, 385);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(443, 371);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // phoneNumberDataGridViewTextBoxColumn
+            // 
+            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "Phone_Number";
+            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "Phone_Number";
+            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.phoneNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateOfBirthDataGridViewTextBoxColumn
+            // 
+            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "Date_Of_Birth";
+            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "Date_Of_Birth";
+            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
+            this.dateOfBirthDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // userInformationBindingSource
+            // 
+            this.userInformationBindingSource.DataMember = "User_Information";
+            this.userInformationBindingSource.DataSource = this.tapNgo_Metro_ServiceDataSet;
+            // 
+            // tapNgo_Metro_ServiceDataSet
+            // 
+            this.tapNgo_Metro_ServiceDataSet.DataSetName = "TapNgo_Metro_ServiceDataSet";
+            this.tapNgo_Metro_ServiceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -124,43 +169,50 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // tapNgo_Metro_ServiceDataSet
-            // 
-            this.tapNgo_Metro_ServiceDataSet.DataSetName = "TapNgo_Metro_ServiceDataSet";
-            this.tapNgo_Metro_ServiceDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // userInformationBindingSource
-            // 
-            this.userInformationBindingSource.DataMember = "User_Information";
-            this.userInformationBindingSource.DataSource = this.tapNgo_Metro_ServiceDataSet;
-            // 
             // user_InformationTableAdapter
             // 
             this.user_InformationTableAdapter.ClearBeforeFill = true;
             // 
-            // emailDataGridViewTextBoxColumn
+            // label3
             // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(164, 221);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 32);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "User Email";
             // 
-            // phoneNumberDataGridViewTextBoxColumn
+            // pictureBox2
             // 
-            this.phoneNumberDataGridViewTextBoxColumn.DataPropertyName = "Phone_Number";
-            this.phoneNumberDataGridViewTextBoxColumn.HeaderText = "Phone_Number";
-            this.phoneNumberDataGridViewTextBoxColumn.Name = "phoneNumberDataGridViewTextBoxColumn";
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(122, 257);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(41, 33);
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
             // 
-            // passwordDataGridViewTextBoxColumn
+            // customTextBox2
             // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // dateOfBirthDataGridViewTextBoxColumn
-            // 
-            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "Date_Of_Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "Date_Of_Birth";
-            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
+            this.customTextBox2.BackColor = System.Drawing.Color.White;
+            this.customTextBox2.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.customTextBox2.BorderFocusColor1 = System.Drawing.Color.DarkGray;
+            this.customTextBox2.BorderRadius = 0;
+            this.customTextBox2.BorderSize = 2;
+            this.customTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customTextBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.customTextBox2.Location = new System.Drawing.Point(170, 257);
+            this.customTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.customTextBox2.Multiline = false;
+            this.customTextBox2.Name = "customTextBox2";
+            this.customTextBox2.Padding = new System.Windows.Forms.Padding(7);
+            this.customTextBox2.PalaceHolderColor = System.Drawing.Color.LightGray;
+            this.customTextBox2.PasswordChar = false;
+            this.customTextBox2.PlaceHolderText = "Enter User Email ";
+            this.customTextBox2.Size = new System.Drawing.Size(259, 33);
+            this.customTextBox2.TabIndex = 27;
+            this.customTextBox2.UnderlinedStyle = true;
             // 
             // User_Data
             // 
@@ -168,6 +220,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1254, 661);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.customTextBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -178,11 +233,13 @@
             this.Text = "User_Data";
             this.Load += new System.EventHandler(this.User_Data_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userInformationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tapNgo_Metro_ServiceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tapNgo_Metro_ServiceDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userInformationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -200,5 +257,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private Custom.CustomTextBox customTextBox2;
     }
 }

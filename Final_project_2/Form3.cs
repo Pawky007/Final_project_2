@@ -79,19 +79,18 @@ namespace Final_project_2
                 else
                 {
                     string connectionString = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
-                    using (SqlConnection con = new SqlConnection(connectionString))
-                    {
-                        con.Open();
-                        string query = "INSERT INTO User_Information (Email, Phone_Number, Password, Date_Of_Birth) VALUES (@Email, @Phone, @Password, @DOB)";
-                        using (SqlCommand cmd = new SqlCommand(query, con))
-                        {
-                            cmd.Parameters.AddWithValue("@Email", customTextBox1.Text);
-                            cmd.Parameters.AddWithValue("@Phone", customTextBox2.Text);
-                            cmd.Parameters.AddWithValue("@Password", customTextBox3.Text);
-                            cmd.Parameters.AddWithValue("@DOB", dateTimePicker1.Value);
-                            cmd.ExecuteNonQuery();
-                        }
-                    }
+                    SqlConnection con = new SqlConnection(connectionString);
+                    
+                    con.Open();
+                    string query = "INSERT INTO User_Information (Email, Phone_Number, Password, Date_Of_Birth) VALUES (@Email, @Phone, @Password, @DOB)";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@Email", customTextBox1.Text);
+                    cmd.Parameters.AddWithValue("@Phone", customTextBox2.Text);
+                    cmd.Parameters.AddWithValue("@Password", customTextBox3.Text);
+                    cmd.Parameters.AddWithValue("@DOB", dateTimePicker1.Value);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    
 
 
                     customTextBox1.Visible = false;
@@ -126,7 +125,7 @@ namespace Final_project_2
                     {
                         timer.Stop();
                         pictureBox3.Visible = false;
-                        Admin_Panel form = new Admin_Panel();
+                        AdminPanel form = new AdminPanel();
                         form.Show();
                         this.Hide();
                     };
@@ -148,6 +147,111 @@ namespace Final_project_2
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customTextBox4__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customTextBox3__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customTextBox2__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customTextBox1__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
