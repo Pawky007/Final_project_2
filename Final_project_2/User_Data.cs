@@ -50,12 +50,6 @@ namespace Final_project_2
                 if (result == DialogResult.Yes)
                 {
                     string connectionString = @"Data Source=ABRARLAPTOP\SQLEXPRESS;Initial Catalog=TapNgo Metro Service;Integrated Security=True";
-                    SqlConnection conn = new SqlConnection(connectionString);
-                    conn.Open();
-                    string query = "DELETE FROM User_Information WHERE Email = @Email";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Email", Email);
-                    int rowsAffected = cmd.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
                     {
@@ -72,8 +66,6 @@ namespace Final_project_2
             {
                 MessageBox.Show("No rows are selected.");
             }
-
-
 
         }
     }
